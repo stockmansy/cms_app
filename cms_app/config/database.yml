@@ -12,7 +12,7 @@ development:
   database: cms_app_development
   pool: 5
   username: root
-  password:
+  password: eloict
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -25,7 +25,7 @@ test:
   database: cms_app_test
   pool: 5
   username: root
-  password:
+  password: eloict
   host: localhost
 
 production:
@@ -35,5 +35,5 @@ production:
   database: cms_app_production
   pool: 5
   username: root
-  password:
+  password: eloict
   host: localhost
