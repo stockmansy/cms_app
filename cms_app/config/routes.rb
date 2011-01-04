@@ -1,22 +1,28 @@
 CmsApp::Application.routes.draw do
+  get "users/login"
+
+  get "users/private"
+
   resources :subjects
 
   resources :students
 
-  resources :users
 
-	get "user/login"
+	get "users/login"
 
-	get "user/process_login"
+	get "users/process_login"
 
-	get "user/logout"
+	get "users/logout"
 
-	get "user/my_account"
+	get "users/my_account"
 
 	resources :users
 
+	match 'authenticate' => 'users' 
+	match 'logout' => 'users' 
+	
 	get "demo/index"
-	root :to => "users#index"
+	root :to => "users#login"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
