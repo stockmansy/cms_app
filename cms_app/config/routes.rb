@@ -1,7 +1,5 @@
 CmsApp::Application.routes.draw do
-  get "users/login"
-
-  get "users/private"
+  resources :presences
 
   resources :subjects
 
